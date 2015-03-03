@@ -1,0 +1,25 @@
+a = input ("Dame a ")
+b = input ("Dame b ")
+a= int(a)
+b= int(b)
+def suma():
+    sum= a+b
+    print ("Suma: ", sum)
+def resta():
+    rest= a-b
+    print ("Resta: ",rest)
+def div ():
+    divi= a/b
+    print ("División: ", int(divi))
+def mult ():
+    mult= a*b
+    print ("Mult: " , mult)
+def rem():
+    resi= a%b
+    print ("Residuo: ", resi)
+
+suma()
+resta()
+div()
+mult()
+rem()
