@@ -1,0 +1,18 @@
+
+import random
+ 
+num= (random.randint(1,100))
+adivina= input ("Adivina el número entre 1 y 100  ")
+while True :
+    if (int(adivina)!=num):
+        if (int(adivina)>num):
+            print ("Muy alto")
+        if (int(adivina)<num):
+            print ("Muy bajo")
+        if (int(adivina)==num):
+            print ("Es correcto!")
+ 
+else:
+ 
+break
+print  (num, "Era la respuesta correcta")
