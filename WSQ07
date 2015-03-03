@@ -1,0 +1,17 @@
+a = input ("Dame a ")
+b = input ("Dame b ")
+
+a= int(a)
+b= int (b)
+contador=a-1
+contador= int(contador)
+t=0
+while (contador != b):
+
+    c=a+contador
+    t=c+t
+
+    contador= contador +1
+
+
+print (t)
