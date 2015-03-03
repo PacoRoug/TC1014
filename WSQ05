@@ -1,0 +1,7 @@
+F= input("What is the temperature in fahrenheit? ")
+C= Int(5) * (int(F) - int (32)) / int(9)
+print ("celsius " , int(C) )
+if (int (C) >= int (100)):
+  print ("water boils")
+else
+  print("Water doesn't boil")
