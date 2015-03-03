@@ -1,0 +1,23 @@
+print("Programa para encontrar factorial de un número.")
+salir="n"
+while (salir!= "y"):
+     
+    def funciones():
+        numero= input(" Dime un número   ")
+        contador=numero
+        numero= int (numero)
+        contador=int (contador)
+        total=numero
+        while(numero!=1):
+             
+            total= total*(numero-1)
+            numero=numero-1
+             
+             
+        print (total)
+     
+    funciones()
+         
+     
+    salir= input (" ¿Quieres salir? y o n   ")
+print ("Hasta la vista...")
