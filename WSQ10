@@ -1,0 +1,43 @@
+import math
+lista= (float(input("dime los números")), float(input("el segundo")), float(input("siguiente ")),float(input("aiguiente")), float(input("siguiente")), float(input("siguiente ")),float(input("aiguiente")), float(input("siguiente")), float(input("el siguiente ")), float(input( )))
+
+
+def suma():
+    global pie
+    pie = 12
+    suma=0
+    n=-1
+    for i in lista:
+        suma= suma+lista [n+1]
+        n=n+1
+    print ("sum: ",suma)
+
+def average():
+    suma=0
+    n=-1
+    for i in lista:
+        suma= suma+lista [n+1]
+        n=n+1
+    average=suma/10
+    print ("average: ",average)
+
+def deviation():
+    dev=0
+    n=-1
+    suma=0
+    m=0
+    for i in lista:
+        suma= suma+lista [n+1]
+        n=n+1
+    average=suma/10
+    for i in lista:
+        dev= dev+ ((lista[m]*lista[m])-(average*average))
+        m= m+1
+    dev= float(dev)
+    finaldev=dev * (1/10)
+    finaldev=  math.sqrt(finaldev)
+
+    print (finaldev)
+suma()
+average()
+deviation()
