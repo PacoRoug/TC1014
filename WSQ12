@@ -1,0 +1,14 @@
+
+def theorem(a,b):
+    while (b!=a):
+        if (b>0):
+            div= int(a/b)
+            rema= a%b
+            a=b
+            b=rema
+        else:
+            b=a
+    return b
+
+
+print("GCD: ",theorem(int(input("Dame a ")),int(input("Dame b "))))
