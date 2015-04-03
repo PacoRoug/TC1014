@@ -1,0 +1,10 @@
+def square(x):
+    r1=10
+    cont=0
+    while(cont<10):
+        sq= (r1+(x/r1))/2
+        r1=sq
+        cont=cont+1
+    return sq
+
+print ("Respuesta: ",square(float(input("Dime el número del que quieres saber la raiz "))))
