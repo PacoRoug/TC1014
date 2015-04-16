@@ -1,0 +1,9 @@
+def superpower(a,b):
+	contador=1
+	e=a
+	while(contador<b):
+		e=e*a
+		contador=contador+1
+	return e
+
+print(superpower(int(input("Dime a ")),int(input("Dime b "))))
