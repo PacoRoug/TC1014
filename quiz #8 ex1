@@ -1,0 +1,7 @@
+import math
+def triangle (x1,y1,x2,y2):
+	distance= math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)))
+	return(distance)
+	
+
+print("Distancia:",triangle(int(input("Dime x1 ")),int(input("Dime y2 ")),int(input("Dime x2 ")),int(input("Dime y2 "))))
