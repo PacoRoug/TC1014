@@ -1,0 +1,11 @@
+def fibonacci(co):
+	a=1
+	b=0
+	contador=0
+	while(contador<co):
+		c=a+b
+		a=b
+		b=c
+		contador=contador+1
+	return c
+print(fibonacci(int(input("dime "))))
