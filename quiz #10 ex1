@@ -1,0 +1,16 @@
+def threes(lista):
+	a=0
+	for i in lista:
+		i=float(i)
+		if(i/3 == int(i/3)):
+			a=a+i
+	return int(a)
+	
+lista=[]
+n=input("Número para la lista. Escribe 'ya' para terminar la lista ")
+while(n!= "ya"):
+	lista.append(n)
+	n=input("dime el numero")
+	
+#lista= [0,6,9,3,12]
+print("total: " ,threes(lista))
