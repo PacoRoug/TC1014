@@ -1,0 +1,28 @@
+
+def docproduct(lista,lista2):
+    contador=0
+    a=0
+    if(len(lista)==len(lista2)):
+        while(contador<len(lista)):
+            c=int(lista[contador])*int(lista2[contador])
+            a= a+c
+            contador=contador+1
+    else:
+        a="error"
+    return a
+
+
+
+lista=[]
+n=input("Número para la lista. Escribe 'ya' para terminar la lista ")
+while (n != "ya"):
+    lista.append(n)
+    n=input("Siguiente número ")
+
+lista2=[]
+n=input("Número para la segunda lista. Escribe 'ya' para terminar la lista ")
+while (n != "ya"):
+    lista2.append(n)
+    n=input("Siguiente número ")
+
+print("total: ",docproduct(lista,lista2))
