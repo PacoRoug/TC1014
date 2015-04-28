@@ -1,0 +1,16 @@
+
+a=open(input("Dime el nombre del archivo "))
+def findbananas(a):
+    numero=0
+    otro=0
+    #if (newfile.txt.find('banana') != -1):
+    for line in a:
+
+        if('banana' in line.lower()):
+
+            numero=numero+1
+        else:
+            otro=otro+1
+    print("Total de 'bananas':",numero,"Otros:",otro)
+
+findbananas(a)
