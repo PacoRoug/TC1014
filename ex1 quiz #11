@@ -1,0 +1,19 @@
+import math
+a=open(input("Dime el nombre del archivo "))
+def readNumbersFromFile(a):
+    suma=0
+    lines=0
+    t=0
+    contador=0
+    for line in a:
+        suma=suma+int(line)
+        lines=lines+1
+    average= suma/lines
+    while(contador<int(lines)):
+        u=(lines-average)*(lines-average)
+        t=t+u
+        contador=contador+1
+    deviation= math.sqrt((1/lines*t))
+    print("Suma:",suma, "    Number of values:",lines,"    Average:", average, "deviation:" ,deviation)
+
+readNumbersFromFile(a)
