@@ -1,0 +1,25 @@
+a=open("newfile.txt")
+average=0
+linecount = 0
+contador=0
+suma=0
+suma1=0
+suma3=0
+for line in a:
+    if(linecount %2 == 0):
+        line1= line[55:57]
+        line2=line[52:54]
+        line3=line[42:46]
+        line1=int(line1)
+        line2=int(line2)
+        line3=float(line3)
+        contador=contador+1
+        suma= suma+line2
+        suma1=suma1+line1
+        suma3=suma3+line3
+
+    linecount = linecount+1
+average= suma/contador
+average1= suma1/contador
+average3= suma3/contador
+print("City MPG average:",average,"Highway MPG average:",average1, "Midrange prices average:", average3)
