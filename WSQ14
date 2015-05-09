@@ -1,0 +1,16 @@
+import math
+def calculate_e(a):
+    e=1
+    contador=0
+    b=1
+    while (contador<a):
+        contador=contador+1
+        b=b*contador
+        e=e+(1/b)
+
+    e=round(e,a)
+    return e
+
+
+
+print(calculate_e(int(input("Dime el número de decimales  "))))
